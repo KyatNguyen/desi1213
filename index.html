@@ -18,14 +18,14 @@
             border-radius: 25px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             max-width: 600px;
-            width: 100%;
+            width: 30%;
             max-height: 850px;
             margin: auto;
 
             border-style: solid;
             border-radius: 20px;
             border-color: rgb(255, 255, 255);
-            background-color: #ffffffd3;
+            background-color: #ffffffb2;
         }
 
         body {
@@ -48,11 +48,11 @@
         }
 
         .logo { 
-            width: 120px;
-            height: 120px;
-            border-radius: 20%;
-            margin-bottom: 20px;
-            margin-top: 20px;
+            width: 160px;
+            height: 160px;
+            border-radius: 10%;
+            margin-bottom: 5px;
+            margin-top: 5px;
 
             display: block;
             margin-left: auto;
@@ -63,7 +63,7 @@
             color: #273149;
             text-align: center;
             font-weight: bold;
-            margin-bottom: 50px;
+            margin-bottom: 35px;
         }
 
         .button {
@@ -121,10 +121,46 @@
             margin: 0;
             width: auto;
         }
+
+        .checkbox-group .link {
+            color: #273149;
+            text-decoration: underline;
+        }
+        
+        .checkbox-group .link:hover {
+            color: #5573b4;
+        }
+
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url("Icon/arrow-down-svgrepo-com.svg");
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 20px;
+            padding-right: 50px;
+        }
+
+        select::-ms-expand {
+            display: none;
+        }
+
+        .note {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            margin-top: 20px;
+            color: #273149;
+            font-size: 14px;
+        }
+
     </style>
 
 
-    <title>Form Asignment (DESI1213.2) by Nguyen Khanh Quoc</title>
+    <title>Form Asignment</title>
 </head>
 <body>
 
@@ -132,9 +168,9 @@
     <div class="container">
         <div>
 
-            <img src="Image/meow.jpg" alt="NotALogo" class="logo">
+            <img src="Image/Kyatoon_Icon.webp" alt="NotALogo" class="logo">
 
-            <h1>Online registration</h1>
+            <h1>Kyatoon Registraition</h1>
 
             <div class="form-group">
                 <label for="name">Username</label>
@@ -405,7 +441,7 @@
 
             <div class="checkbox-group">
                 <input type="checkbox" id="terms" name="terms" required>
-                <label for="terms">I agree to the terms and conditions</label>
+                <label for="terms">I agree to the <a href="https://www.youtube.com" target="_blank" class="link">terms and conditions</a></label>
             </div>
 
             <div class="form-group">
@@ -414,5 +450,11 @@
  
         </div>
     </div>
+
+
+    <div class="note">
+        Kyatoooooonnnn!!!!
+    </div>
+
 </body>
 </html>
